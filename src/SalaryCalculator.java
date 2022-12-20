@@ -48,7 +48,7 @@ public class SalaryCalculator extends JFrame {
         salaryPanel.add(resultLabel);
         salaryPanel.add(resultField);
         salaryPanel.add(graphPanel);
-        
+
         investmentPanel = new JPanel();
         investmentLabel = new JLabel("Investment amount:");
         investmentField = new JTextField(10);
@@ -114,11 +114,11 @@ public class SalaryCalculator extends JFrame {
                 double growthRate;
 
                 if (type.equals("Roth IRA")) {
-                    growthRate = 0.085;
+                    growthRate = 0.07;
                 } else if (type.equals("REIT")) {
-                    growthRate = 0.133;
+                    growthRate = 0.129;
                 } else if (type.equals("S&P 500")) {
-                    growthRate = 0.121;
+                    growthRate = 0.147;
                 } else {
                     growthRate = Double.parseDouble(growthField.getText()) / 100;
                 }
